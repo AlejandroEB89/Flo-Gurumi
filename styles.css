@@ -200,6 +200,7 @@ footer {
 
     .nav-container{
         display: block;
+        height: fit-content;
     }
     .nav-logo,  .nav-logo > img, .nav-logo > p {
         display: none;

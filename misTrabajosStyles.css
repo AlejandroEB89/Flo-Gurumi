@@ -31,7 +31,7 @@ html {
     flex-direction: row;
     justify-content: space-between;
     padding:20px;
-    height: 3.5em;/* height: min-content;    /* ////  ACOMODAR LUEGO //////////////*/
+    height:min-content ;/* height:3.5em ;    /* ////  ACOMODAR LUEGO //////////////*/
 }
 
 
@@ -219,6 +219,15 @@ footer {
 }
 
 @media only screen and (min-width: 600px) and (max-width: 960px){
+    
+    .nav-container{
+        justify-content: center;
+        height:3.5em;
+    }
+    .nav-logo,  .nav-logo > img, .nav-logo > p {
+        display: none;
+
+    } 
     .photos-container{
         display: grid;
         grid-template-columns: 50% 50% ;
@@ -242,7 +251,9 @@ footer {
 
 
 @media only screen and (min-width: 961px){
-
+    .nav-container{
+        height:3.5em;
+    }
     .title-container{
         padding:5px;
         margin: 1vh 0 0;
