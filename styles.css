@@ -4,22 +4,22 @@
     box-sizing: border-box;
 }
 
-/* @font-face {
-    font-family: 'Walter Turncoat' ;
-    src: url(./tipos/WalterTurncoat-Regular.ttf);
-    font-family: 'Caveat' ;
-    src: url(./tipos/Caveat-VariableFont_wght.ttf);
-    font-family: 'Quicksand' ;
-    src: url(./tipos/Quicksand-VariableFont_wght.ttf);
-  } */
+html { 
+    background: url(./images/4853433.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.8;
+  }
+
 
 .page{
     display: flex;
-    flex-direction: column;
-    /* flex-wrap: wrap;   //lo desactivo y el h1 responsive funciona de 10 pero algo rompe en el navbar  (esq sup dere)      */      
-    background-color: #ffffff;
-    opacity: 0.8;
-    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ffffff 14px ), repeating-linear-gradient( #faf8f855, #f9ecec );
+    flex-direction: column;   
+    /* background-color: #ffffff; */
+    /* opacity: 0.8;
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ffffff 14px ), repeating-linear-gradient( #faf8f855, #f9ecec ); */
 }
 
 
@@ -34,7 +34,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding:20px;
-    height: min-content;    /* ////  ACOMODAR LUEGO //////////////*/
+    height: 3.5em;    /* ////  ACOMODAR LUEGO //////////////*/
 }
 
 .nav-logo {
@@ -86,24 +86,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+  
 }
 
 .logo-text-main {
     font-family: 'Walter Turncoat', cursive;
-    font-size: 5em;
+    font-size: 4em;
     display: inline;
     color: #090909;
 }
 
 .logo-text-subtitle {
     font-family: 'Caveat', cursive;
-    font-size: 2.1em;
+    font-size: 1.7em;
     display: inline;
     color: #090909;
 }
 
 .logo > img {
-    height: 9em;
+    height: 8em;
 }
 
 
