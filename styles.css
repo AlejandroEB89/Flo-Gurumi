@@ -29,7 +29,6 @@ html {
     background: #c32bad; /*  fallback for old browsers */
     background: -webkit-linear-gradient(to right, #7027a0, #c32bad);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #7027a0, #c32bad); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -115,7 +114,7 @@ html {
 
 .main-image-container > img {
     max-height: 450px;
-    margin:20px;
+    margin:20px 0;
 }
 
 .main-image-container > h1 {
@@ -245,7 +244,7 @@ footer {
       }
 
     .main-image-container > img {
-        width: 100vw;
+        width: 100%;
         margin: 20px 0;
     }
 
@@ -313,7 +312,7 @@ footer {
       }
 
     .main-image-container > img {
-        width: 100vw;
+        width: 100%;
         margin: 20px 0;
     }
 
