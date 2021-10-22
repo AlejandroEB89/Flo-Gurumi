@@ -412,6 +412,13 @@ footer {
         transition-delay: 0.1s;
     } 
 
+    .active > li > a, 
+    .active > i {
+        font-size: 1.21em;
+        font-weight: bold;
+        color: rgb(255, 210, 209);
+    }
+
 
     
 
