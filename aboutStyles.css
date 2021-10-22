@@ -16,9 +16,6 @@ html {
 .page{
     display: flex;
     flex-direction: column;  
-    /* background-color: #ffffff;
-    opacity: 0.8;
-    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #ffffff 14px ), repeating-linear-gradient( #faf8f855, #f9ecec ); */
 }
 
 
@@ -87,7 +84,6 @@ a:hover {
     align-items: center;
     padding:20px;
     margin-top: 3vh;
-    /* text-align: center; */
 }
 
 .title-container > p {
@@ -103,18 +99,27 @@ h1 {
     font-size: 10vw;
     display: inline;
     color: #090909;
-    /* border: 1px solid black; */
 }
 
-.photos-container{
-    margin-bottom: 2rem;
+.content{
+    margin-bottom: 3rem;
+    padding: 10px;
+    /* background-color: bisque;
+    border: 1px solid black; */
+
 }
 
+.content > img {
+    max-height: 50vw;
+    float: left;
+    margin-right: 0.8em;
+} 
 
-
-.photo-item > p {
-    font-family: 'Caveat', cursive;
-    font-size: 3vw ;
+.content > p {
+    text-align: justify;
+    font-family: 'Quicksand', sans-serif;
+    color: #090909;
+    font-size: 1.1em;
 }
 
 
@@ -196,30 +201,7 @@ footer {
         color: rgb(255, 210, 209);
     }
 
-    .photo-item {
-        display: flex;
-        padding: 1rem;
-        width:100%;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .dos{
-        flex-direction: row-reverse;
-    }
     
-    .photo-item > img {
-        max-height: 70vw;
-        /* border: 1px solid black;  */
-    }
-
-    .photo-item > p {
-        font-family: 'Caveat', cursive;
-        font-size: 5.5vw ;
-    }
-
-  
-
     
 }
 
@@ -231,12 +213,11 @@ footer {
     }
     .nav-logo,  .nav-logo > img, .nav-logo > p {
         display: none;
-
     } 
 
+
     .title-container > p {
-        font-size: 3vw;
-      
+        font-size: 3vw; 
     }
     
     h1 {
@@ -250,24 +231,28 @@ footer {
         color: rgb(255, 210, 209);
     }
 
-    .photos-container{
-        display: grid;
-        grid-template-columns: 50% 50% ;
-        row-gap: 5em;
-    }
-
-    .photo-item {
-        flex-direction: column;
-        text-align: center;
-        padding: 1rem;
-         width:100%;
-        /* background-color: blanchedalmond;
+    .content{
+        margin-bottom: 2rem;
+        padding: 10px;
+        /* background-color: bisque;
         border: 1px solid black; */
+    
+    }
+    
+    .content > img {
+        max-height: 50vw;
+        float: left;
+        margin-right: 0.8em;
+    } 
+    
+    .content > p {
+        text-align: justify;
+        font-family: 'Quicksand', sans-serif;
+        color: #090909;
+        font-size: 1.1em;
     }
 
-    .photo-item > img {
-        max-height: 30vw;
-    }
+  
 
 }
 
