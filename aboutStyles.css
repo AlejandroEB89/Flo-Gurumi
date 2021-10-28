@@ -47,7 +47,7 @@ html {
     font-family: 'Walter Turncoat', cursive;
     font-size: 1.5em;
     color: white;
-
+    text-shadow: 1.5px 1.5px 1.5px black;
 }
 
 
@@ -63,8 +63,8 @@ html {
 
 .menu-link > li {
     display: inline;
-    font-family: 'Caveat' , cursive;
-    font-size: 1.2em;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
     margin-right: 12px;
 }
 
@@ -197,9 +197,9 @@ footer {
 
     .active > li > a, 
     .active > i {
-        font-size: 5.25vw;
+        font-size: 4.5vw;
         font-weight: bold;
-        color: rgb(255, 210, 209);
+        text-shadow: 1px 1px 1px black;
     }
 
     
@@ -227,9 +227,9 @@ footer {
 
     .active > li > a, 
     .active > i {
-        font-size: 2.66vw;
+        font-size: 2.4vw;
         font-weight: bold;
-        color: rgb(255, 210, 209);
+        text-shadow: 1px 1px 1px black;
     }
 
     .content{
@@ -343,9 +343,10 @@ footer {
 
     .active > li > a, 
     .active > i {
-        font-size: 1.21em;
+        font-size: 1.15em;
         font-weight: bold;
-        color: rgb(255, 210, 209);
+        /* text-decoration:underline; */
+        text-shadow: 1px 1px 1px black;
     }
 
     

@@ -52,7 +52,7 @@ body {
     font-size: 1.5em;
     color: white;
     margin-bottom: 0;
-    /* border: 1px solid black; */
+    text-shadow: 1.5px 1.5px 1.5px black;
 }
 
 
@@ -68,8 +68,9 @@ body {
 
 .menu-link > li {
     display: inline;
-    font-family: 'Caveat' , cursive;
-    font-size: 1.2em;
+    font-family: 'Quicksand', sans-serif;
+    /* font-size: 1.2em; */
+    font-size: 1em;
     margin-right: 12px;
 }
 
@@ -246,9 +247,9 @@ footer {
 
     .active > li > a, 
     .active > i {
-        font-size: 5.25vw;
+        font-size: 4.5vw;
         font-weight: bold;
-        color: rgb(255, 210, 209);
+        text-shadow: 1px 1px 1px black;
     }
 
     
@@ -276,13 +277,12 @@ footer {
 
     .active > li > a, 
     .active > i {
-        font-size: 2.66vw;
+        font-size: 2.4vw;
         font-weight: bold;
-        color: rgb(255, 210, 209);
+        text-shadow: 1px 1px 1px black;
     }
 
     .contenido-container{
-        /* border: 1px solid black; */
         display: flex;
         flex-direction: row;
         width: 80%;
@@ -290,7 +290,6 @@ footer {
     }
 
     .imagen-container{
-        /* border: 1px solid black; */
         padding: 1rem 0 0;
         display: flex;
         flex-direction: column;
@@ -300,7 +299,6 @@ footer {
       .imagen-container > img {
           width: 100%;
           margin: 1rem 0;
-          /* border: 1px solid black; */
       }
       
       .imagen-container > p {
@@ -308,14 +306,12 @@ footer {
           font-family: 'Quicksand', sans-serif;
           font-size: 1.3rem;
           margin-top: 1rem;
-          /* border: 1px solid black; */
       }
       
       h3 {
           font-family: 'Quicksand', sans-serif;
           font-size: 1.8rem;
           text-align: center;
-          /* border: 1px solid black; */
       }
 
     .formulario{
@@ -408,9 +404,10 @@ footer {
 
     .active > li > a, 
     .active > i {
-        font-size: 1.21em;
+        font-size: 1.15em;
         font-weight: bold;
-        color: rgb(255, 210, 209);
+        /* text-decoration:underline; */
+        text-shadow: 1px 1px 1px black;
     }
 
     
