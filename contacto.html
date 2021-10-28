@@ -57,27 +57,27 @@
                         un presupuesto o hacer un pedido especial.
                     </p>
                 </div>
-                <div class="formulario">
+                <form action="https://formspree.io/f/xayazrpa" id="formulario" class="formulario" method="POST">
                     <div class="mb-3">
-                        <label for="name" class="form-label">Nombre completo</label>
-                        <input type="text" class="form-control" id="name" placeholder="Ingresá tu nombre">
+                        <label for="nombre" class="form-label">Nombre completo</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresá tu nombre" required>
                     </div>
                     <div class="mb-3">
-                        <label for="name" class="form-label">Localidad</label>
-                        <input type="text" class="form-control" id="name" placeholder="¿De dónde me escribís?">
+                        <label for="localidad" class="form-label">Localidad</label>
+                        <input type="text" class="form-control" id="localidad" name="localidad" placeholder="¿De dónde me escribís?" required>
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="correo@ejemplo.com">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="correo@ejemplo.com" required>
                     </div>
                     <div class="mb-3">
                         <label for="mensaje" class="form-label">Tu mensaje</label>
-                        <textarea class="form-control" id="mensaje" rows="5"></textarea>
+                        <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
                     </div>
                     <div class="boton">
-                        <button type="button" class="btn btn-primary">Enviar</button>
+                        <button id="enviar" type="submit" onClick="validarFormulario()" class="btn btn-primary">Enviar</button>
                     </div>
-                </div>
+                </form>
             </div>
            
             
@@ -105,6 +105,24 @@
             </div>
         </footer>
     </div>
+    <script>
+
+         function validarFormulario() {
+
+             let nombre = document.getElementById('nombre').value;
+             let localidad = document.getElementById('localidad').value;
+             let email = document.getElementById('email').value;
+             let mensaje = document.getElementById('mensaje').value;
+
+             if (nombre=="" || localidad=="" || email=="" ||   mensaje=="" ){
+                 alert("Completá todos los campos!")
+             }
+             else {
+                this.submit();
+             }
+         }
+         
+    </script>
     <script src="https://kit.fontawesome.com/eff7c41d34.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
