@@ -121,10 +121,49 @@ h1 {
     margin: 1rem 0 ;
 }
 
+@keyframes corazonUno {
+    0% { color:#7027a0; }
+    25% { color:#b34dab;}
+    50% { color:#fa67ac;}
+    75% { color:#bb2fc0;}
+    100% { color:#7027a0;}
+} 
+
+@keyframes corazonDos{
+    0% { color:#b34dab; }
+    16% { color:#bb2fc0;}
+    33% { color:#7027a0;}
+    50% { color:#bb2fc0;}
+    66% { color:#b34dab;}
+    84% { color:#fa67ac;}
+    100% { color:#b34dab;}
+} 
+
+
+@keyframes corazonTres {
+    0% { color:#fa67ac; }
+    25% { color:#b34dab;}
+    50% { color:#7027a0;}
+    75% { color:#bb2fc0;}
+    100% { color:#fa67ac;}
+} 
+
+
+.corazon-uno{
+    animation: corazonUno 2s linear infinite;
+}
+
+.corazon-dos{
+    animation: corazonDos 2s linear infinite;
+}
+.corazon-tres{
+    animation: corazonTres 2s linear infinite;
+}
+
 .corazones-container > i {
     font-size: 1.4em;
-    color: #090909;
     margin: 0 10px;
+
 }
 
 
